@@ -32,6 +32,9 @@ $ source waterdip-venv/bin/activate
 # Install dependencies
 $ pip install -r requirements.txt
 
+# Migrate Using Alembic
+$ alembic upgrade head
+
 # Start server
 $ uvicorn server.main:app --host 0.0.0.0 --port ${PORT}
 
