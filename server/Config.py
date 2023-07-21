@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     DATABASE_PASSWORD: Optional[str] = None
     DATABASE_NAME: Optional[str] = None
     DATABASE_USERNAME: Optional[str] = None
-    DATABPOSTGRES_DB: Optional[str] = None
+    POSTGRES_DB: Optional[str] = None
     POSTGRES_PASSWORD: Optional[str] = None
 
     class Config:
