@@ -20,12 +20,13 @@ services:
     ports:
       - ${PORT}:${PORT}
     command: bash -c "alembic upgrade head && uvicorn server.main:app --host 0.0.0.0 --port ${PORT} --workers 4"
-
     restart: on-failure
     depends_on:
       - postgres
   postgres:
     image: postgres:latest
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     expose:

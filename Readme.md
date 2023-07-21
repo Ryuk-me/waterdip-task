@@ -32,6 +32,9 @@ $ source waterdip-venv/bin/activate
 # Install dependencies
 $ pip install -r requirements.txt
 
+# Migrate Using Alembic
+$ alembic upgrade head
+
 # Start server
 $ uvicorn server.main:app --host 0.0.0.0 --port ${PORT}
 
@@ -63,7 +66,9 @@ You will be building a server that can keep track of tasks. Your server must be 
 1. - [x] (Extra Credit) Bulk add multiple tasks in one request
 1. - [x] (Extra Credit) Bulk delete multiple tasks in one request
 
-
+## Click here to test Api
+ 
+> [`api/docs`](https://api-waterdip-ryuk-me.cloud.okteto.net/api/docs)
 
 #### License
 
