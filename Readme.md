@@ -38,6 +38,10 @@ $ alembic upgrade head
 # Start server
 $ uvicorn server.main:app --host 0.0.0.0 --port ${PORT}
 
+# To Run Test Case
+
+$ pytest test.py [make sure to chanGe the URL]
+
 # Access
 $ http://localhost:${PORT}/api/docs
 
@@ -69,6 +73,10 @@ You will be building a server that can keep track of tasks. Your server must be 
 ## Click here to test Api
  
 > [`api/docs`](https://api-waterdip-ryuk-me.cloud.okteto.net/api/docs)
+
+## Testcase Result
+
+![Test Case Passed](./assest/test_case_passed.png)
 
 #### License
 
